@@ -1,0 +1,9 @@
+creation_rules:
+  - encrypted_regex: '^(data|stringData)$'
+    # Specify kms/pgp/etc encryption key
+    # This tutorial uses a local PGP key for encryption.
+    # DO NOT USE IN PRODUCTION ENV
+    pgp: 'C517F5FC2811C3AE'
+    # Optionally you can configure to use a providers key store
+    # kms: XXXXXX
+    # gcp_kms: XXXXXX
