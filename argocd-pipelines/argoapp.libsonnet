@@ -16,9 +16,7 @@ local append_overlay(path, overlay) =
             repoURL: "https://github.com/solarvish/flux-test-repo.git",
             targetRevision: std.extVar('branch'),
             overlay_overrides:: std.parseJson(std.extVar('overlay_overrides')),
-            overlay:: if std.objectHas(self.overlay_overrides, name) then
-                         self.overlay_overrides[name]
-                      else if overlay_override != '' then
+            overlay:: if overlay_override != '' then
                          overlay_override
                      else
                          std.extVar('overlay'),
