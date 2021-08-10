@@ -4,5 +4,5 @@ kind: Kustomization
 resources:
 - deployment.yaml
 
-generators:
-- secret-generator.yaml
+#generators:
+#- secret-generator.yaml
